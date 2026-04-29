@@ -1,6 +1,5 @@
 class Jogo:
-    def __init__(self, id_jogo, titulo, console, genero, publisher, developer, critic_score,
-                 total_sales, na_sales, jp_sales, pal_sales, other_sales, release_date):
+    def __init__(self, id_jogo, titulo, console, genero, publisher, developer, critic_score, total_sales, na_sales, jp_sales, pal_sales, other_sales, release_date):
 
         self.id = id_jogo
         self.titulo = titulo
