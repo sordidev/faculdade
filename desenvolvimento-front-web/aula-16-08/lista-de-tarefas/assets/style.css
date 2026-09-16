@@ -1,0 +1,84 @@
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            padding: 2rem;
+            margin: 0;
+        }
+        .container {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            width: 500px;
+        }
+        h1 { color: #2c3e50; text-align: center; }
+
+        /* Barra de entrada: campo + botão lado a lado */
+        .entrada {
+            display: flex;
+            gap: 8px;
+            margin-bottom: 1.5rem;
+        }
+        .entrada input {
+            flex: 1;      /* Ocupa todo o espaço disponível */
+            padding: 10px;
+            font-size: 1rem;
+            border: 2px solid #ddd;
+            border-radius: 6px;
+        }
+        .entrada button {
+            padding: 10px 16px;
+            font-size: 1rem;
+            background: #27ae60;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+        .entrada button:hover { background: #229954; }
+
+        /* Lista de tarefas */
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        li {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px;
+            border-bottom: 1px solid #eee;
+            font-size: 1rem;
+            cursor: pointer;       /* Clique para riscar */
+            transition: all 0.2s;
+        }
+        li:hover { background: #f8f9fa; }
+
+        /* Classe "concluida": aplicada via toggle ao clicar */
+        li.concluida {
+            text-decoration: line-through;
+            color: #aaa;
+        }
+
+        /* Botão X para remover */
+        .btn-remover {
+            background: #e74c3c;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            padding: 4px 10px;
+            cursor: pointer;
+            font-size: 0.8rem;
+        }
+        .btn-remover:hover { background: #c0392b; }
+
+        /* Contador de tarefas */
+        .contador {
+            text-align: center;
+            color: #888;
+            margin-top: 1rem;
+            font-size: 0.9rem;
+        }
+    

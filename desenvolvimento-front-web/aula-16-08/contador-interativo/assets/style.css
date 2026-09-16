@@ -1,0 +1,52 @@
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background: white;
+            padding: 3rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            text-align: center;
+            width: 350px;
+        }
+        h1 { color: #2c3e50; margin-bottom: 0; }
+
+        /* Número grande do contador */
+        #numero {
+            font-size: 5rem;
+            font-weight: 800;
+            color: #2c3e50;
+            margin: 1rem 0;
+            transition: color 0.3s;  /* Transição suave de cor */
+        }
+
+        /* Container dos botões */
+        .botoes {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+        }
+        .botoes button {
+            padding: 12px 20px;
+            font-size: 1.2rem;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            color: white;
+            font-weight: bold;
+            min-width: 60px;
+        }
+        .btn-menos { background: #e74c3c; }
+        .btn-reset { background: #95a5a6; }
+        .btn-mais  { background: #27ae60; }
+
+        .btn-menos:hover { background: #c0392b; }
+        .btn-reset:hover { background: #7f8c8d; }
+        .btn-mais:hover  { background: #229954; }
+    

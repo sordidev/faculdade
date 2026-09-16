@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto 4 — Validador de Formulário</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Cadastro</h1>
+
+        <!-- Usamos <form> para agrupar os campos.
+             O JS vai interceptar o envio com preventDefault. -->
+        <form id="formulario">
+
+            <!-- Campo: Nome -->
+            <div class="campo">
+                <label for="nome">Nome completo:</label>
+                <input type="text" id="nome" placeholder="Digite seu nome">
+                <div class="mensagem" id="msg-nome"></div>
+            </div>
+
+            <!-- Campo: E-mail -->
+            <div class="campo">
+                <label for="email">E-mail:</label>
+                <input type="text" id="email" placeholder="seu@email.com">
+                <div class="mensagem" id="msg-email"></div>
+            </div>
+
+            <!-- Campo: Senha -->
+            <div class="campo">
+                <label for="senha">Senha (mínimo 6 caracteres):</label>
+                <input type="password" id="senha" placeholder="Digite sua senha">
+                <div class="mensagem" id="msg-senha"></div>
+            </div>
+
+            <button type="submit">Enviar Cadastro</button>
+        </form>
+
+        <div id="resultado-final"></div>
+    </div>
+<script src="assets/script.js"></script>
+</body>
+</html>
