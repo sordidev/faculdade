@@ -1,0 +1,56 @@
+        /* === ESTILO GERAL === */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;                  /* Centraliza tudo */
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        /* === CARD CENTRAL === */
+        .container {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            text-align: center;
+            width: 400px;
+        }
+
+        h1 { color: #2c3e50; }
+
+        /* === CAMPO DE TEXTO === */
+        input[type="text"] {
+            padding: 10px;
+            font-size: 1rem;
+            border: 2px solid #ddd;
+            border-radius: 6px;
+            width: 100%;
+            margin: 1rem 0;
+            box-sizing: border-box;         /* Inclui padding na largura */
+        }
+
+        /* === BOTÃO === */
+        button {
+            padding: 10px 24px;
+            font-size: 1rem;
+            background-color: #2c3e50;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;                /* Mãozinha ao passar o mouse */
+        }
+        button:hover {
+            background-color: #1a252f;      /* Escurece ao passar o mouse */
+        }
+
+        /* === RESULTADO === */
+        #resultado {
+            margin-top: 1.5rem;
+            font-size: 1.3rem;
+            color: #27ae60;
+            font-weight: bold;
+            min-height: 2rem;               /* Reserva espaço para evitar pulo */
+        }
