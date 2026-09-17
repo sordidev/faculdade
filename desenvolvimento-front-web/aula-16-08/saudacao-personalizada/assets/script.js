@@ -18,7 +18,9 @@
             if (nome === "") {
                 resultado.textContent = "Por favor, digite seu nome!";
                 resultado.style.color = "red";
-
+            } else if (typeof nome !== "string") {
+                resultado.textContent = "Por favor, digite um nome válido!";
+                resultado.style.color = "red";
             } else {
                 // Passo 5: Exibir a saudação usando template literal
                 resultado.textContent = `Olá, ${nome}! Bem-vindo(a) à aula de JavaScript!`;
