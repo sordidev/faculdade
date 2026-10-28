@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Defensor Espacial</title>
-    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/style/style.css">
 </head>
 <body>
 
@@ -19,7 +19,7 @@
             <canvas id="gameCanvas" width="600" height="400">
                 Seu navegador não suporta Canvas.
             </canvas>
-            <p class="hint">Clique nos alvos vermelhos para disparar o laser!</p>
+            <p class="hint">Setas ou W A S D: mover &nbsp;|&nbsp; Shift ou Espaço: turbo &nbsp;|&nbsp; Clique: disparar laser. Desvie dos tiros inimigos!</p>
         </div>
 
         <!-- ========== PAINEL SVG COMPLEMENTAR (Bloco 8) ========== -->
@@ -42,7 +42,7 @@
                 <polygon points="30,40 20,50 40,50" fill="#F9E795"/>
 
                 <!-- Label nave -->
-                <text x="50" y="60" fill="#FFFFFF" font-family="Arial"
+                <text id="svgShipStatus" x="50" y="60" fill="#FFFFFF" font-family="Arial"
                       font-size="12">Nave: Operacional</text>
 
                 <!-- Icone escudo (circulo) -->
@@ -50,15 +50,15 @@
                         stroke="#F9E795" stroke-width="2"/>
 
                 <!-- Label escudo -->
-                <text x="50" y="94" fill="#FFFFFF" font-family="Arial"
+                <text id="svgShieldStatus" x="50" y="94" fill="#FFFFFF" font-family="Arial"
                       font-size="12">Escudo: Ativo</text>
 
-                <!-- Barra de munição -->
+                <!-- Barra de energia (atualizada pelo game.js) -->
                 <text x="20" y="128" fill="#FFFFFF" font-family="Arial"
-                      font-size="12">Munição:</text>
+                      font-size="12">Energia:</text>
                 <rect x="90" y="118" width="180" height="14" rx="4"
                       fill="rgba(255,255,255,0.1)"/>
-                <rect x="90" y="118" width="140" height="14" rx="4"
+                <rect id="svgEnergyBar" x="90" y="118" width="180" height="14" rx="4"
                       fill="#F96167"/>
 
                 <!-- Linha separadora -->
@@ -73,7 +73,7 @@
         </section>
     </main>
 
-    <script src="/assets/js/game.js"></script>
+    <script src="/assets/script/game.js"></script>
 
 </body>
 </html>
