@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Defensor Espacial</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+
+    <header>
+        <h1>&#x1F680; Defensor Espacial</h1>
+        <p class="subtitle">Aula de Laboratório &mdash; Canvas 2D + SVG</p>
+    </header>
+
+    <!-- ========== CANVAS DO JOGO ========== -->
+    <main>
+        <div class="game-container">
+            <canvas id="gameCanvas" width="600" height="400">
+                Seu navegador não suporta Canvas.
+            </canvas>
+            <p class="hint">Clique nos alvos vermelhos para disparar o laser!</p>
+        </div>
+
+        <!-- ========== PAINEL SVG COMPLEMENTAR (Bloco 8) ========== -->
+        <section class="svg-panel">
+            <h2>Painel de Status (SVG)</h2>
+            <svg id="svgPanel" width="300" height="180" viewBox="0 0 300 180"
+                 xmlns="http://www.w3.org/2000/svg">
+
+                <!-- Fundo do painel -->
+                <rect x="0" y="0" width="300" height="180" rx="8"
+                      fill="#1A1A2E" stroke="#F96167" stroke-width="2"/>
+
+                <!-- Titulo -->
+                <text x="150" y="28" text-anchor="middle"
+                      fill="#F9E795" font-family="Arial" font-size="14"
+                      font-weight="bold">STATUS DA MISSÃO</text>
+
+                <!-- Icone nave (retangulo + triangulo) -->
+                <rect x="20" y="50" width="20" height="14" fill="#2F3C7E"/>
+                <polygon points="30,40 20,50 40,50" fill="#F9E795"/>
+
+                <!-- Label nave -->
+                <text x="50" y="60" fill="#FFFFFF" font-family="Arial"
+                      font-size="12">Nave: Operacional</text>
+
+                <!-- Icone escudo (circulo) -->
+                <circle cx="30" cy="90" r="10" fill="none"
+                        stroke="#F9E795" stroke-width="2"/>
+
+                <!-- Label escudo -->
+                <text x="50" y="94" fill="#FFFFFF" font-family="Arial"
+                      font-size="12">Escudo: Ativo</text>
+
+                <!-- Barra de munição -->
+                <text x="20" y="128" fill="#FFFFFF" font-family="Arial"
+                      font-size="12">Munição:</text>
+                <rect x="90" y="118" width="180" height="14" rx="4"
+                      fill="rgba(255,255,255,0.1)"/>
+                <rect x="90" y="118" width="140" height="14" rx="4"
+                      fill="#F96167"/>
+
+                <!-- Linha separadora -->
+                <line x1="20" y1="148" x2="280" y2="148"
+                      stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+
+                <!-- Rodape -->
+                <text x="150" y="168" text-anchor="middle"
+                      fill="rgba(255,255,255,0.5)" font-family="Arial"
+                      font-size="10">Canvas = Pixels | SVG = Vetores</text>
+            </svg>
+        </section>
+    </main>
+
+    <script src="/assets/js/game.js"></script>
+
+</body>
+</html>
